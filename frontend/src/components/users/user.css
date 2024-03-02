@@ -1,0 +1,160 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+@import "./normalize.css";
+:root {
+  --color-primary: #2584ff;
+  --color-secondary: #00d9ff;
+  --color-accent: #ff3400;
+  --color-headings: #1b0760;
+  --color-body: #918ca4;
+  --color-body-darker: #5c5577;
+  --color-border: #ccc;
+  --border-radius: 5px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/* Typography */
+::selection {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--color-body);
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+
+p {
+  margin-top: 0;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  border-radius: var(--border-radius);
+  border: 1px solid #ccc;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.list-inline {
+  display: flex;
+}
+
+.list .list__item {
+  width: 14.28%;
+  height: 30px;
+  overflow: hidden;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.list .list__item:nth-child(4) {
+  padding-left: 50px;
+}
+
+.list:nth-child(2n) {
+  background: lightblue;
+}
+
+/* Header Part */
+.header {
+  background: var(--color-primary);
+  border-top-left-radius: var(--border-radius);
+  border-top-right-radius: var(--border-radius);
+}
+
+.header > li {
+  width: 14.28%;
+  margin: 5px;
+}
+
+.header__name {
+  padding-right: 10px;
+}
+
+.header-sort-type {
+  display: flex;
+  cursor: pointer;
+}
+
+/* Pagination */
+.result-pagi-container {
+  margin-top: 30px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.results__data {
+  margin: 0;
+  padding-right: 30px;
+  font-size: 1.4rem;
+}
+
+.pagination__item {
+  padding: 5px 20px;
+  margin: 0px 8px;
+  cursor: pointer;
+}
+
+/* FORM */
+.input-form {
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 2rem;
+}
+
+.input-form input {
+  padding: 8px;
+  margin: 0px 20px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.input-form input:focus {
+  outline: none;
+}
+
+.input-form__submit__button {
+  padding: 8px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+  background: var(--color-accent);
+  color: white;
+}
